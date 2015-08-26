@@ -21,6 +21,13 @@ public class LineComparatorTest {
         Assert.assertEquals(true, comparator.compareTwoLines());
     }
 
+    @Test
+    public void forLinesWithDifferentXAndYCoordinates(){
+        Line lineOne = new Line(1,0,0,0);
+        Line lineTwo = new Line(0,0,0,0);
+        LineComparator comparator = new LineComparator(lineOne,lineTwo);
+        Assert.assertEquals(false, comparator.compareTwoLines());
+    }
 
 
 }
