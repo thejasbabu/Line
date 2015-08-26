@@ -16,5 +16,8 @@ public class GeometryTest {
         Assert.assertEquals(1.0f, Geometry.getLength(0, 0, 0, 1),0.0);
     }
 
-    
+    @Test
+    public void linewithstartingindex12andendingindex35() {
+        Assert.assertEquals(3.6, Geometry.getLength(1, 2, 3, 5),0.05);
+    }
 }
