@@ -73,4 +73,12 @@ public class PointTest {
 
         assertNotEquals(pointOne, pointTwo);
     }
+
+    @Test
+    public void shouldBeEqualIfXAndYCoordinatesOfPointsAreTheSame() {
+        Point pointOne = new Point(1, 1);
+        Point pointTwo = new Point(1, 1);
+
+        assertEquals(pointOne, pointTwo);
+    }
 }
