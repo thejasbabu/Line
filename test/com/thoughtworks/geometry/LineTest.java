@@ -43,7 +43,7 @@ public class LineTest {
 
     @Test
     public void shouldNotBeEqualToNull() {
-        Line line=new Line(0 , 0, 0, 0);
+        Line line=new Line(0, 0, 0, 0);
 
         assertNotEquals(null, line);
     }
@@ -68,7 +68,7 @@ public class LineTest {
         Line lineOne = new Line(1, 1, 1, 1);
         Line lineTwo = new Line(1, 1, 2, 2);
 
-        assertNotEquals(lineOne,lineTwo);
+        assertNotEquals(lineOne, lineTwo);
     }
 
     @Test
@@ -84,6 +84,6 @@ public class LineTest {
         Line lineOne = new Line(1, 0, 2, 0);
         Line lineTwo = new Line(2, 0, 1, 0);
 
-        assertEquals(lineOne,lineTwo);
+        assertEquals(lineOne, lineTwo);
     }
 }

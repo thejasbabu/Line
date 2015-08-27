@@ -6,7 +6,6 @@ public class Line {
     public Line(double x1, double y1, double x2, double y2) {
         startPoint = new Point(x1, y1);
         endPoint = new Point(x2, y2);
-
     }
 
     public double length() {
@@ -26,6 +25,3 @@ public class Line {
             return true;
     }
 }
-
-
-
