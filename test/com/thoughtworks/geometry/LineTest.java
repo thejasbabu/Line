@@ -51,6 +51,7 @@ public class LineTest {
     public void shouldNotBeEqualToSomethingThatIsNotALine() {
         Line line=new Line(0, 0, 0, 0);
 
-        assertNotEquals(line,"line");
+        assertNotEquals(line, "line");
     }
+
 }

@@ -63,8 +63,14 @@ public class PointTest {
         Point pointOne = new Point(0, 1);
         Point pointTwo = new Point(1, 2);
 
-        assertNotEquals(pointOne,pointTwo);
+        assertNotEquals(pointOne, pointTwo);
     }
 
+    @Test
+    public void shouldNotBeEqualIfYCoordinatesOfPointsAreDifferent() {
+        Point pointOne = new Point(1, 1);
+        Point pointTwo = new Point(1, 2);
 
+        assertNotEquals(pointOne, pointTwo);
+    }
 }

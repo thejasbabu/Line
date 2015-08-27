@@ -21,7 +21,7 @@ public class Point {
         if(!(that instanceof Point) || that == null)
             return false;
         Point thatPoint = (Point)that;
-        if(!(this.x == thatPoint.x))
+        if(!(this.x == thatPoint.x) || !(this.y == thatPoint.y))
             return false;
         else
             return true;
