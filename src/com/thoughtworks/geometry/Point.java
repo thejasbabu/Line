@@ -20,6 +20,9 @@ public class Point {
     public boolean equals(Object that) {
         if(!(that instanceof Point) || that == null)
             return false;
+        Point thatPoint = (Point)that;
+        if(!(this.x == thatPoint.x))
+            return false;
         else
             return true;
     }

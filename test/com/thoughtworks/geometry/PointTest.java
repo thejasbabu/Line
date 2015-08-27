@@ -8,21 +8,21 @@ import static org.junit.Assert.*;
 public class PointTest {
 
     @Test
-    public void theDifferenceBetweenXCoordinateOfSamePointIsZero(){
+    public void theDifferenceBetweenXCoordinateOfSamePointIsZero() {
         Point point = new Point(1, 0);
 
         assertEquals(0, point.calculateDifferenceBetweenXCoordinate(point), 0.0);
     }
 
     @Test
-    public void theDifferenceBetweenYCoordinateOfSamePointIsZero(){
+    public void theDifferenceBetweenYCoordinateOfSamePointIsZero() {
         Point point = new Point(1, 0);
 
         assertEquals(0, point.calculateDifferenceBetweenYCoordinate(point), 0.0);
     }
 
     @Test
-    public void theDifferenceBetweenXCoordinateOfTwoDifferentPointsIsLegit(){
+    public void theDifferenceBetweenXCoordinateOfTwoDifferentPointsIsLegit() {
         Point pointOne = new Point(1, 0);
         Point pointTwo = new Point(2, 0);
 
@@ -30,7 +30,7 @@ public class PointTest {
     }
 
     @Test
-    public void theDifferenceBetweenYCoordinateOfTwoDifferentPointsIsLegit(){
+    public void theDifferenceBetweenYCoordinateOfTwoDifferentPointsIsLegit() {
         Point pointOne = new Point(0, 1);
         Point pointTwo = new Point(0, 2);
 
@@ -38,23 +38,33 @@ public class PointTest {
     }
 
     @Test
-    public void isEqualToItself(){
+    public void isEqualToItself() {
         Point point = new Point(1, 1);
 
         assertEquals(point, point);
     }
 
     @Test
-    public void isNotEqualToSomethingWhichIsNotAPoint(){
+    public void isNotEqualToSomethingWhichIsNotAPoint() {
         Point point = new Point(1, 1);
 
-        assertEquals(point, "Point");
+        assertNotEquals(point, "Point");
     }
 
     @Test
-    public void isNotEqualToNull(){
+    public void isNotEqualToNull() {
         Point point = new Point(1, 1);
 
-        assertNotEquals(null,point);
+        assertNotEquals(null, point);
     }
+
+    @Test
+    public void shouldNotBeEqualIfXCoordinatesOfPointsAreDifferent() {
+        Point pointOne = new Point(0, 1);
+        Point pointTwo = new Point(1, 2);
+
+        assertNotEquals(pointOne,pointTwo);
+    }
+
+
 }
