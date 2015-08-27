@@ -42,4 +42,11 @@ public class LineTest {
         Line lineTwo = new Line(1, 2, 2 , 2);
         assertNotEquals(lineOne, lineTwo);
     }
+
+    @Test
+    public void areEqualWhenTheXCoordinatesAndYCoordinatesOfTheStartingPointsAreTheSame() {
+        Line lineOne = new Line(0, 1, 1, 1);
+        Line lineTwo = new Line(0, 1, 2 , 2);
+        assertEquals(lineOne, lineTwo);
+    }
 }

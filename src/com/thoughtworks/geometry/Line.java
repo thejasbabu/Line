@@ -16,7 +16,7 @@ public class Line {
      @Override
     public boolean equals(Object o) {
         Line line = (Line) o;
-         return this.x1 == line.x1;
+         return this.x1 == line.x1 || this.y1 == line.y1;
     }
 
 
