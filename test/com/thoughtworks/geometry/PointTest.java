@@ -13,4 +13,11 @@ public class PointTest {
 
         assertEquals(0, point.calculateDifferenceBetweenXCoordinate(point), 0.0);
     }
+
+    @Test
+    public void theDifferenceBetweenYCoordinateOfSamePointIsZero(){
+        Point point = new Point(1, 0);
+
+        assertEquals(0, point.calculateDifferenceBetweenYCoordinate(point), 0.0);
+    }
 }
