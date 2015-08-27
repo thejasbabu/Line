@@ -38,4 +38,11 @@ public class LineTest {
 
         assertEquals(line, line);
     }
+
+    @Test
+    public void shouldNotBeEqualToNull(){
+        Line line=new Line(0 ,0, 0, 0);
+
+        assertNotEquals(null,line);
+    }
 }

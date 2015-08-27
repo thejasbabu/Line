@@ -13,6 +13,12 @@ public class Line {
     public double length() {
         return Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if(o == null) return false;
+        else return true;
+    }
 }
 
 
