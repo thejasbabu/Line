@@ -76,6 +76,14 @@ public class LineTest {
         Line lineOne = new Line(1, 1, 1, 1);
         Line lineTwo = new Line(1, 1, 1, 1);
 
+        assertEquals(lineOne, lineTwo);
+    }
+
+    @Test
+    public void shouldBeEqualIfStaringAndEndingPointsOfTwoLinesAreInterchangedAndAreSame() {
+        Line lineOne = new Line(1, 0, 2, 0);
+        Line lineTwo = new Line(2, 0, 1, 0);
+
         assertEquals(lineOne,lineTwo);
     }
 }
