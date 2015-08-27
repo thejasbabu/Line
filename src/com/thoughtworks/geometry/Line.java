@@ -14,8 +14,12 @@ public class Line {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if(o == null || !(o instanceof Line)) return false;
+    public boolean equals(Object that) {
+        if(that == null || !(that instanceof Line))
+            return false;
+        Line thatLine = (Line)that;
+        if(!(this.startPoint.equals(thatLine.startPoint)))
+            return false;
         else return true;
     }
 }

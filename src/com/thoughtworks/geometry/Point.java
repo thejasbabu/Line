@@ -8,12 +8,12 @@ public class Point {
         this.y = y;
     }
 
-    public double calculateDifferenceBetweenXCoordinate(Point point) {
-        return Math.abs(this.x - point.x);
+    public double calculateDifferenceBetweenXCoordinate(Point that) {
+        return Math.abs(this.x - that.x);
     }
 
-    public double calculateDifferenceBetweenYCoordinate(Point point) {
-        return Math.abs(this.y - point.y);
+    public double calculateDifferenceBetweenYCoordinate(Point that) {
+        return Math.abs(this.y - that.y);
     }
 
     @Override

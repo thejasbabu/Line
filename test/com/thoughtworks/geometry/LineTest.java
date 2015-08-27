@@ -1,6 +1,7 @@
 package com.thoughtworks.geometry;
 
 import static org.junit.Assert.*;
+
 import org.junit.Test;
 
 public class LineTest {
@@ -54,4 +55,11 @@ public class LineTest {
         assertNotEquals(line, "line");
     }
 
+    @Test
+    public void shouldNotBeEqualIfStartingPointsOfLinesAreDifferent() {
+        Line lineOne = new Line(1, 1, 1, 1);
+        Line lineTwo = new Line(2, 2, 1, 2);
+
+        assertNotEquals(lineOne,lineTwo);
+    }
 }
