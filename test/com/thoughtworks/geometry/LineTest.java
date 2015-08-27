@@ -70,4 +70,12 @@ public class LineTest {
 
         assertNotEquals(lineOne,lineTwo);
     }
+
+    @Test
+    public void shouldBeEqualIfStartingAndEndingPointsOfLinesAreSame() {
+        Line lineOne = new Line(1, 1, 1, 1);
+        Line lineTwo = new Line(1, 1, 1, 1);
+
+        assertEquals(lineOne,lineTwo);
+    }
 }
