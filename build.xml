@@ -21,6 +21,7 @@
                 <pathelement location="out"/>
             </classpath>
             <test name="com.thoughtworks.geometry.LineTest" todir="."/>
+            <test name="com.thoughtworks.geometry.PointTest" todir="."/>
         </junit>
     </target>
 </project>
