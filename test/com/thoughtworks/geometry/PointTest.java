@@ -37,9 +37,17 @@ public class PointTest {
         assertEquals(1.0, pointOne.calculateDifferenceBetweenYCoordinate(pointTwo), 0.0);
     }
 
+    @Test
     public void isEqualToItself(){
         Point point = new Point(1, 1);
 
         assertEquals(point, point);
+    }
+
+    @Test
+    public void isNotEqualToSomethingWhichIsNotAPoint(){
+        Point point = new Point(1, 1);
+
+        assertEquals(point, "Point");
     }
 }

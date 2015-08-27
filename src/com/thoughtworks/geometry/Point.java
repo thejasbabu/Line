@@ -15,4 +15,12 @@ public class Point {
     public double calculateDifferenceBetweenYCoordinate(Point point) {
         return Math.abs(this.y - point.y);
     }
+
+    @Override
+    public boolean equals(Object that) {
+        if(!(that instanceof Point))
+            return false;
+        else
+            return true;
+    }
 }
