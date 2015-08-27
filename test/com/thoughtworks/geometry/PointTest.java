@@ -50,4 +50,11 @@ public class PointTest {
 
         assertEquals(point, "Point");
     }
+
+    @Test
+    public void isNotEqualToNull(){
+        Point point = new Point(1, 1);
+
+        assertNotEquals(null,point);
+    }
 }

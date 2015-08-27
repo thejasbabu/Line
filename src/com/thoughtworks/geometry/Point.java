@@ -18,7 +18,7 @@ public class Point {
 
     @Override
     public boolean equals(Object that) {
-        if(!(that instanceof Point))
+        if(!(that instanceof Point) || that == null)
             return false;
         else
             return true;
