@@ -9,10 +9,10 @@ public class Point {
     }
 
     public double calculateDifferenceBetweenXCoordinate(Point point) {
-        return this.x - point.x;
+        return Math.abs(this.x - point.x);
     }
 
     public double calculateDifferenceBetweenYCoordinate(Point point) {
-        return this.y - point.y;
+        return Math.abs(this.y - point.y);
     }
 }
