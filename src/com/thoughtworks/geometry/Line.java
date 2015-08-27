@@ -1,17 +1,16 @@
 package com.thoughtworks.geometry;
 
 public class Line {
-    private double x1, x2, y1, y2;
+    private Point startPoint, endPoint;
 
     public Line(double x1, double y1, double x2, double y2) {
-        this.x1 = x1;
-        this.x2 = x2;
-        this.y1 = y1;
-        this.y2 = y2;
+        startPoint = new Point(x1, y1);
+        endPoint = new Point(x2, y2);
+
     }
 
     public double length() {
-        return Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
+        return Math.sqrt(Math.pow(startPoint.calculateDifferenceBetweenXCoordinate(endPoint), 2) + Math.pow(startPoint.calculateDifferenceBetweenYCoordinate(endPoint), 2));
     }
 
     @Override

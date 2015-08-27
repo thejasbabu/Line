@@ -5,7 +5,8 @@ import org.junit.Test;
 
 public class LineTest {
 
-    @Test public void lineWithStartingIndex00AndEndingIndex00() {
+    @Test
+    public void lineWithStartingIndex00AndEndingIndex00() {
         Line line = new Line(0, 0, 0, 0);
 
         assertEquals(0.0, line.length(), 0.0);
