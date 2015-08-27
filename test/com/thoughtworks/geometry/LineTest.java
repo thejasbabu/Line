@@ -41,8 +41,15 @@ public class LineTest {
 
     @Test
     public void shouldNotBeEqualToNull(){
-        Line line=new Line(0 ,0, 0, 0);
+        Line line=new Line(0 , 0, 0, 0);
 
-        assertNotEquals(null,line);
+        assertNotEquals(null, line);
+    }
+
+    @Test
+    public void shouldNotBeEqualToSomethingThatIsNotALine(){
+        Line line=new Line(0, 0, 0, 0);
+
+        assertNotEquals(line,"line");
     }
 }
