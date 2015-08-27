@@ -26,6 +26,14 @@ public class PointTest {
         Point pointOne = new Point(1, 0);
         Point pointTwo = new Point(2, 0);
 
-        assertEquals(1.0,pointOne.calculateDifferenceBetweenXCoordinate(pointTwo), 0.0);
+        assertEquals(1.0, pointOne.calculateDifferenceBetweenXCoordinate(pointTwo), 0.0);
+    }
+
+    @Test
+    public void theDifferenceBetweenYCoordinateOfTwoDifferentPointsIsLegit(){
+        Point pointOne = new Point(0, 1);
+        Point pointTwo = new Point(0, 2);
+
+        assertEquals(1.0, pointOne.calculateDifferenceBetweenYCoordinate(pointTwo), 0.0);
     }
 }
