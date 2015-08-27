@@ -10,9 +10,3 @@ To calculate the length of a line given the two end points and to check if two l
 ~ The command to build the codebase is
  cd <path to build.xml>
  ant
-
-
-****Running the codebase*****
-
-
-
