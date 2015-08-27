@@ -60,6 +60,14 @@ public class LineTest {
         Line lineOne = new Line(1, 1, 1, 1);
         Line lineTwo = new Line(2, 2, 1, 2);
 
+        assertNotEquals(lineOne, lineTwo);
+    }
+
+    @Test
+    public void shouldNotBeEqualIfEndingPointsOFLinesAreDifferent() {
+        Line lineOne = new Line(1, 1, 1, 1);
+        Line lineTwo = new Line(1, 1, 2, 2);
+
         assertNotEquals(lineOne,lineTwo);
     }
 }

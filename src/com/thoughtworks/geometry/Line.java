@@ -18,7 +18,7 @@ public class Line {
         if(that == null || !(that instanceof Line))
             return false;
         Line thatLine = (Line)that;
-        if(!(this.startPoint.equals(thatLine.startPoint)))
+        if(!(this.startPoint.equals(thatLine.startPoint)) || !(this.endPoint.equals(thatLine.endPoint)))
             return false;
         else return true;
     }
