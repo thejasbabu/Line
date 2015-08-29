@@ -8,14 +8,9 @@ public class Point {
         this.y = y;
     }
 
-    public double calculateDifferenceBetweenXCoordinate(Point that) {
-        return Math.abs(this.x - that.x);
+    public double distanceFromAnother(Point that) {
+       return Math.sqrt(Math.pow(that.x - this.x, 2) + Math.pow(that.y - this.y, 2));
     }
-
-    public double calculateDifferenceBetweenYCoordinate(Point that) {
-        return Math.abs(this.y - that.y);
-    }
-
     @Override
     public boolean equals(Object that) {
         if(!(that instanceof Point) || that == null)

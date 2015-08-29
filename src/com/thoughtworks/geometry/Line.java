@@ -3,13 +3,13 @@ package com.thoughtworks.geometry;
 public class Line {
     private Point startPoint, endPoint;
 
-    public Line(double x1, double y1, double x2, double y2) {
-        startPoint = new Point(x1, y1);
-        endPoint = new Point(x2, y2);
+    public Line(Point startPoint, Point endPoint) {
+        this.startPoint = startPoint;
+        this.endPoint = endPoint;
     }
 
     public double length() {
-        return Math.sqrt(Math.pow(startPoint.calculateDifferenceBetweenXCoordinate(endPoint), 2) + Math.pow(startPoint.calculateDifferenceBetweenYCoordinate(endPoint), 2));
+        return startPoint.distanceFromAnother(endPoint);
     }
 
     @Override

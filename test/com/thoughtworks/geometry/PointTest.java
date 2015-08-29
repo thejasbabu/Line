@@ -11,14 +11,14 @@ public class PointTest {
     public void theDifferenceBetweenXCoordinateOfSamePointIsZero() {
         Point point = new Point(1, 0);
 
-        assertEquals(0, point.calculateDifferenceBetweenXCoordinate(point), 0.0);
+        assertEquals(0, point.distanceFromAnother(point), 0.0);
     }
 
     @Test
     public void theDifferenceBetweenYCoordinateOfSamePointIsZero() {
         Point point = new Point(1, 0);
 
-        assertEquals(0, point.calculateDifferenceBetweenYCoordinate(point), 0.0);
+        assertEquals(0, point.distanceFromAnother(point), 0.0);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class PointTest {
         Point pointOne = new Point(1, 0);
         Point pointTwo = new Point(2, 0);
 
-        assertEquals(1.0, pointOne.calculateDifferenceBetweenXCoordinate(pointTwo), 0.0);
+        assertEquals(1.0, pointOne.distanceFromAnother(pointTwo), 0.0);
     }
 
     @Test
@@ -34,7 +34,7 @@ public class PointTest {
         Point pointOne = new Point(0, 1);
         Point pointTwo = new Point(0, 2);
 
-        assertEquals(1.0, pointOne.calculateDifferenceBetweenYCoordinate(pointTwo), 0.0);
+        assertEquals(1.0, pointOne.distanceFromAnother(pointTwo), 0.0);
     }
 
     @Test
