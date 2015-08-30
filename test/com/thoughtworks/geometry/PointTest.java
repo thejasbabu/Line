@@ -81,4 +81,11 @@ public class PointTest {
 
         assertEquals(pointOne, pointTwo);
     }
+
+    @Test
+    public void hashcodeShouldBeEqualForSamePointObject() {
+        Point pointOne = new Point(1, 1);
+
+        assertEquals(pointOne.hashCode(), pointOne.hashCode());
+    }
 }
