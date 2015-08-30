@@ -113,6 +113,7 @@ public class LineTest {
         Point endPointOfLineTwo = new Point(1, 0);
         Line lineOne = new Line(startPointOfLineOne, endPointOfLineOne);
         Line lineTwo = new Line(startPointOfLineTwo, endPointOfLineTwo);
+
         assertEquals(lineOne, lineTwo);
     }
 
@@ -123,5 +124,17 @@ public class LineTest {
         Line lineOne = new Line(startPointOfLineOne, endPointOfLineOne);
 
         assertEquals(lineOne.hashCode(), lineOne.hashCode());
+    }
+
+    @Test
+    public void hashcodeShouldNotBeEqualForDifferentLineObjects() {
+        Point startPointOfLineOne = new Point(1, 0);
+        Point endPointOfLineOne=new Point(2, 0);
+        Point startPointOfLineTwo = new Point(3, 0);
+        Point endPointOfLineTwo = new Point(4, 0);
+        Line lineOne = new Line(startPointOfLineOne, endPointOfLineOne);
+        Line lineTwo = new Line(startPointOfLineTwo, endPointOfLineTwo);
+
+        assertNotEquals(lineOne.hashCode(), lineTwo.hashCode());
     }
 }
