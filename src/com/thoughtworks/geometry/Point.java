@@ -11,6 +11,7 @@ public class Point {
     public double distanceFromAnother(Point that) {
        return Math.sqrt(Math.pow(that.x - this.x, 2) + Math.pow(that.y - this.y, 2));
     }
+
     @Override
     public boolean equals(Object that) {
         if(!(that instanceof Point) || that == null)

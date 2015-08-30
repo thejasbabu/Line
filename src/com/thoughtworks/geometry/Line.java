@@ -13,6 +13,13 @@ public class Line {
     }
 
     @Override
+    public int hashCode() {
+        int result = startPoint.hashCode();
+        result = 31 * result + endPoint.hashCode();
+        return result;
+    }
+
+    @Override
     public boolean equals(Object that) {
         if(that == null || !(that instanceof Line))
             return false;
