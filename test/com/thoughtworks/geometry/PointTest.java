@@ -1,3 +1,4 @@
+//PointTest class is a test class for Point class containing multiple specs
 package com.thoughtworks.geometry;
 
 import org.junit.Test;

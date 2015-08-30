@@ -1,3 +1,4 @@
+//LineTest class tests the Line class with multiple specs
 package com.thoughtworks.geometry;
 
 import static org.junit.Assert.*;
