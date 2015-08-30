@@ -9,36 +9,6 @@ import static org.junit.Assert.*;
 public class PointTest {
 
     @Test
-    public void theDifferenceBetweenXCoordinateOfSamePointIsZero() {
-        Point point = new Point(1, 0);
-
-        assertEquals(0, point.distanceFromAnother(point), 0.0);
-    }
-
-    @Test
-    public void theDifferenceBetweenYCoordinateOfSamePointIsZero() {
-        Point point = new Point(1, 0);
-
-        assertEquals(0, point.distanceFromAnother(point), 0.0);
-    }
-
-    @Test
-    public void theDifferenceBetweenXCoordinateOfTwoDifferentPointsIsLegit() {
-        Point pointOne = new Point(1, 0);
-        Point pointTwo = new Point(2, 0);
-
-        assertEquals(1.0, pointOne.distanceFromAnother(pointTwo), 0.0);
-    }
-
-    @Test
-    public void theDifferenceBetweenYCoordinateOfTwoDifferentPointsIsLegit() {
-        Point pointOne = new Point(0, 1);
-        Point pointTwo = new Point(0, 2);
-
-        assertEquals(1.0, pointOne.distanceFromAnother(pointTwo), 0.0);
-    }
-
-    @Test
     public void isEqualToItself() {
         Point point = new Point(1, 1);
 
@@ -81,6 +51,13 @@ public class PointTest {
         Point pointTwo = new Point(1, 1);
 
         assertEquals(pointOne, pointTwo);
+    }
+
+    @Test
+    public void distanceFromSamePointShouldBeZero() {
+        Point point = new Point(1, 1);
+
+        assertEquals(0,point.distanceFromAnother(point),0.0);
     }
 
     @Test
