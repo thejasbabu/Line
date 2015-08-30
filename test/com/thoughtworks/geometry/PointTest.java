@@ -88,4 +88,12 @@ public class PointTest {
 
         assertEquals(pointOne.hashCode(), pointOne.hashCode());
     }
+
+    @Test
+    public void hashcodeShouldBeDifferentForDifferentPointObject() {
+        Point pointOne = new Point(1, 1);
+        Point pointTwo = new Point(2, 1);
+
+        assertNotEquals(pointOne.hashCode(), pointTwo.hashCode());
+    }
 }
