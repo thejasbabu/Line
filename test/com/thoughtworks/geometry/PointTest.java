@@ -61,6 +61,14 @@ public class PointTest {
     }
 
     @Test
+    public void distanceOfAPointZeroZeroFromAnotherPointZeroOneShouldReturnOneAsTheDistance() {
+        Point pointOne = new Point(0, 0);
+        Point pointTwo = new Point(0, 1);
+
+        assertEquals(1.0, pointOne.distanceFromAnother(pointTwo), 0.0);
+    }
+
+    @Test
     public void hashcodeShouldBeEqualForSamePointObject() {
         Point pointOne = new Point(1, 1);
 
