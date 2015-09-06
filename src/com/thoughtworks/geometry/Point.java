@@ -1,4 +1,4 @@
-//Point class  calculates the distance between two points in a plane
+//Point class  calculates the distance between two coordinate in a plane.
 package com.thoughtworks.geometry;
 
 public class Point {
