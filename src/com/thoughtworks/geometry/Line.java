@@ -1,4 +1,4 @@
-//Line class calculates the length of a line and checks if two lines are equal based on their end points
+//Line class has two points and calculates the length of a line.
 package com.thoughtworks.geometry;
 
 public class Line {
